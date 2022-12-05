@@ -21,22 +21,22 @@ house=House.create(house_type:"Tree house",image:"",price:3500,location:"Karen",
 house=House.create(house_type:"Cottage",image:"https://a0.muscache.com/im/pictures/83961080-5941-4004-9857-772ae58c4196.jpg?im_w=720",price:1800,location:"Kajiado",description:"The cave experience is one of the most exotic homes created for holiday lovers ,readers,friends and families who need a break from the norm. with the amazing views of the hills from the house ,will make you feel relaxed ,calmed and refreshed.",ratings:5.0,capacity:2,owner_id:1,beds:2)
 
 # CREATE USER DATA
-user=User.create(name:"Michael",email:"kamirimichael369@gmail.com",phone_number:254712345678,house_id:2)
-user=User.create(name:"joseph",email:"joseph@gmail.com",phone_number:2547745321891,house_id:3)
-user=User.create(name:"ellis",email:"ellis@gmail.com",phone_number:254745321892,house_id:6)
-user=User.create(name:"john",email:"john@gmail.com",phone_number:254745321893,house_id:8)
-user=User.create(name:"doreen",email:"doreen@gmail.com",phone_number:254745321894,house_id:1)
-user=User.create(name:"joyann",email:"joy@gmail.com",phone_number:254745321896,house_id:4)
-user=User.create(name:"davis",email:"davis@gmail.com",phone_number:254745321897,house_id:3)
-user=User.create(name:"scott",email:"scott@gmail.com",phone_number:254745321898,house_id:7)
-user=User.create(name:"Frankline",email:"Frankline@gmail.com",phone_number:254745321812,house_id:9)
+user=User.create(name:"Michael",email:"kamirimichael369@gmail.com",phoneNumber:254712345678,house_id:2,)
+user=User.create(name:"joseph",email:"joseph@gmail.com",phoneNumber:2547745321891,house_id:3)
+user=User.create(name:"ellis",email:"ellis@gmail.com",phoneNumber:254745321892,house_id:6)
+user=User.create(name:"john",email:"john@gmail.com",phoneNumber:254745321893,house_id:8)
+user=User.create(name:"doreen",email:"doreen@gmail.com",phoneNumber:254745321894,house_id:1)
+user=User.create(name:"joyann",email:"joy@gmail.com",phoneNumber:254745321896,house_id:4)
+user=User.create(name:"davis",email:"davis@gmail.com",phoneNumber:254745321897,house_id:3)
+user=User.create(name:"scott",email:"scott@gmail.com",phoneNumber:254745321898,house_id:7)
+user=User.create(name:"Frankline",email:"Frankline@gmail.com",phoneNumber:254745321812,house_id:9)
 
 # create owner
 owner=Owner.create(name:"michael mbugua")
 
 # create Bookings
 
-booking=Booking.create(name:"mike",house_id:2,check_in_date:2022-12-04,check_out_date:2022-12-11,total:10000)
+booking=Booking.create(name:"mike",checkIn:2022-12-04,checkOut:2022-12-11,total:10000)
 
 puts "Done seeding"
 
