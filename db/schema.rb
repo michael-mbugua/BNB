@@ -13,10 +13,9 @@
 ActiveRecord::Schema[7.0].define(version: 2022_12_05_114512) do
   create_table "bookings", force: :cascade do |t|
     t.string "name"
-    t.integer "house_id"
-    t.date "check_in_date"
-    t.date "check_out_date"
-    t.integer "No_of_people"
+    t.date "checkIn"
+    t.date "checkOut"
+    t.integer "persons"
     t.integer "total"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -45,7 +44,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_05_114512) do
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.text "email"
-    t.integer "phone_number"
+    t.integer "phoneNumber"
     t.integer "house_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
