@@ -22,21 +22,21 @@ house=House.create(house_type:"Cottage",image:"https://a0.muscache.com/im/pictur
 
 # CREATE USER DATA
 user=User.create(name:"Michael",email:"kamirimichael369@gmail.com",phoneNumber:254712345678,house_id:2,)
-user=User.create(name:"joseph",email:"joseph@gmail.com",phoneNumber:2547745321891,house_id:3)
+user=User.create(name:"joseph",email:"joseph@gmail.com",phoneNumber:2547745321,house_id:3)
 user=User.create(name:"ellis",email:"ellis@gmail.com",phoneNumber:254745321892,house_id:6)
-user=User.create(name:"john",email:"john@gmail.com",phoneNumber:254745321893,house_id:8)
-user=User.create(name:"doreen",email:"doreen@gmail.com",phoneNumber:254745321894,house_id:1)
-user=User.create(name:"joyann",email:"joy@gmail.com",phoneNumber:254745321896,house_id:4)
-user=User.create(name:"davis",email:"davis@gmail.com",phoneNumber:254745321897,house_id:3)
-user=User.create(name:"scott",email:"scott@gmail.com",phoneNumber:254745321898,house_id:7)
-user=User.create(name:"Frankline",email:"Frankline@gmail.com",phoneNumber:254745321812,house_id:9)
+user=User.create(name:"john",email:"john@gmail.com",phoneNumber:2547453218,house_id:8)
+user=User.create(name:"doreen",email:"doreen@gmail.com",phoneNumber:2547453218,house_id:1)
+user=User.create(name:"joyann",email:"joy@gmail.com",phoneNumber:2547453212,house_id:4)
+user=User.create(name:"davis",email:"davis@gmail.com",phoneNumber:2547453211,house_id:3)
+user=User.create(name:"scott",email:"scott@gmail.com",phoneNumber:2547453214,house_id:7)
+user=User.create(name:"Frankline",email:"Frankline@gmail.com",phoneNumber:2547453217,house_id:9)
 
 # create owner
 owner=Owner.create(name:"michael mbugua")
 
 # create Bookings
 
-booking=Booking.create(name:"mike",checkIn:2022-12-04,checkOut:2022-12-11,total:10000)
+booking=Booking.create(name:"mike",checkIn:2022-12-04,checkOut:2022-12-11,total:10000,persons:4)
 
 puts "Done seeding"
 
