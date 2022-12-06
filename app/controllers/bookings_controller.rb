@@ -8,6 +8,6 @@ class BookingsController < ApplicationController
     end
     private
     def booking_params
-        params.permit(:name,:house_id,:checkIn,:checkOut,:No_of_people,:total)
+        params.permit(:id,:name,:house_id,:checkIn,:checkOut,:persons,:total)
     end
 end
