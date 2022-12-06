@@ -3,7 +3,7 @@ class HousesController < ApplicationController
         render json: House.all, status: :ok
     end
     def show
-        house=House.find_by(house_type: params[:house_type])
+        house=House.find_by(id: params[:id])
         render json: house, status: :found
     end
     def create
