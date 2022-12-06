@@ -4,8 +4,7 @@ Rails.application.routes.draw do
   resources :users
   resources :houses
   get '.houses/:house_type' ,to: "house#show"
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get '/login',to: "sessions#create"
+  get '/me',to: "users#show"
+  get '/logout',to: "sessions#destroy"
 end
