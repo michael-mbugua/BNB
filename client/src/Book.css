@@ -1,0 +1,45 @@
+form{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 10px 20px;
+    border-radius: none;
+    
+}
+.credentials{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    width: 40vh;
+}
+.dates{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    width: 40vh;
+}
+.dates input{
+    padding: 20px 30bx;
+    border-radius: 0%;
+}
+.button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 0%;
+}
+.button{
+    border-radius: 2px;
+    background-color: green;
+    color: white;
+    font-weight: 700;
+}
