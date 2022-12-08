@@ -6,6 +6,7 @@ import Footer from './Footer'
 import SearchPage from './SearchPage'
 import Register from './Register';
 import Login from './Login';
+import Book from './Book';
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path="/login">
             <Login/>
+          </Route>
+          <Route path="/booking">
+            <Book/>
           </Route>
           <Route path="/">
             <Home />

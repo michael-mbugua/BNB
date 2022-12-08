@@ -1,7 +1,11 @@
 import React from 'react';
 import './Card.css'
+import { useHistory } from "react-router-dom";
+import { Button } from '@material-ui/core';
+
 
 function Card({ src, house_type, description, price }) {
+    const history=useHistory()
     return (
         <div className='card'>
             <img src={src} alt="" width={200} />
@@ -10,7 +14,7 @@ function Card({ src, house_type, description, price }) {
                 <h4>{description}</h4>
                 <h3>{price}</h3>
             </div>
-            <button className='book'>Book house</button>
+            <button onClick={()=>history.push('/booking')} className='book'>Book house</button>
         </div>
     )
 }

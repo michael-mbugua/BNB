@@ -1,39 +1,48 @@
 import React ,{useState}from 'react'
 import './Login.css'
+import { useHistory } from "react-router-dom";
 
-function Login({onLogin}) {
-    const [name,setName]=useState("");
+function Login({user,onLogin}) {
+    const history= useHistory()
+    const [name,setName] =useState("")
+    const [isLoading, setIsLoading] = useState(false);
+    const [errors, setErrors] = useState([]);
     function handleSubmit(e){
         e.preventDefault();
-        fetch("/login",{
+        setIsLoading(true)
+        fetch("http://localhost:3000/login",{
             method: "POST",
             headers: {
                 "content-Type": "application/json",
             },body: JSON.stringify({name}),
-        }).then((r)=>{
+        }).then((r) => {
+            setIsLoading(false);
             if (r.ok) {
-                r.json()
-                .then((user)=> {
-                onLogin(user)});
+                r.json().then((user) => {
+                onLogin(user);
+                history.push("/home");
+                console.log("success",user)
+                });
+            } else {
+            r.json().then((err) => {
+                setErrors(err.errors);
+                });
             }
-        })
+            });
     }
     
     return (
     <form onSubmit={handleSubmit}>
         <h3>Login with Username </h3>
-        <div class="form-group">
-            <label for="exampleInputEmail1">Username :</label>
-            <input type="text" class="form-control"
+        <div className="form-group">
+            <h4>Username</h4>
+            <input type="text" className="form-control"
             value={name} 
             onChange={(e)=> setName(e.target.value)}
             placeholder="Enter Your Name"/>
         </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">email  :</label>
-            <input type="email" class="form-control" id="exampleInputPassword1" placeholder="mike@gmail.com"/>
-        </div>
-        <button type="submit" class="btn btn-primary">Login</button>
+        
+        <button type="submit" className="btn btn-primary">{isLoading ? "Log in" : "Login"}</button>
     </form>
     )
 }

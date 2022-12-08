@@ -1,7 +1,6 @@
 import React from 'react';
 import './SearchResult.css';
-// import StarIcon from "@material-ui/icons/Star";
-
+import { useHistory } from "react-router-dom";
 function SearchResult({
     img,
     location,
@@ -10,7 +9,10 @@ function SearchResult({
     star,
     price,
     total,
-}) {
+}) 
+
+{
+    const history= useHistory()
     return (
         <div className='searchResult'>
             <img src={img} alt="" />
@@ -34,7 +36,7 @@ function SearchResult({
                         <h3>{price}</h3>
                         <p>{total}</p>
                     </div>
-                    <button className='book'>Book house</button>
+                    <button onClick={()=>history.push('/booking')} className='book'>Book house</button>
                 </div>
             </div>
         </div>
