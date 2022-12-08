@@ -1,6 +1,5 @@
 class BookingsController < ApplicationController
     def create
-        return render json: {error: "Not authorized"},status: :unauthorized unless session.include? :user_id
         booking=Booking.create(booking_params)
         render json: booking
     end
