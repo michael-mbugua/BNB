@@ -13,6 +13,6 @@ In this project the API is designed using Ruby and rails as the framework.</p>
  <h3>DATABASE</h3>
  <p>This api is connected to Postgres database</p>
  <h3>some endpoints</h3>
- <li><i>localhost://3000/houses</i> : this will take you to all added houses</li>
+ <li><i><a>localhost://3000/houses</a></i> : this will take you to all added houses</li>
  <li><i>localhost://3000/users</i>:this will take you to all added users</li>
  <li><i>localhost://3000/bookings</i>:this will take you to all added bookings</li>
