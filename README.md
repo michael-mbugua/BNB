@@ -16,3 +16,9 @@ In this project the API is designed using Ruby and rails as the framework.</p>
  <li><i><a>localhost://3000/houses</a></i> : this will take you to all added houses</li>
  <li><i>localhost://3000/users</i>:this will take you to all added users</li>
  <li><i>localhost://3000/bookings</i>:this will take you to all added bookings</li>
+
+ <h3>front End</h3>
+<p> you first have to run npm install --force this will install all the dependancies required for the app.
+ the reason to use --force is because this is not the latest version of react there are some de pendancies such as use history instead of usenavigate</p>
+<p>
+ once you run npm start --prefix client it will take you to apage you can login and view all the available houses to Book a house you have to fill in the Book form which you will be added to the database then the management will see it.</p>
