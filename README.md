@@ -1,4 +1,4 @@
-<h1>AIR-BNB BACK-END API</h1>
+<h1>AIR-BNB</h1>
 <p>This Project is about helping visitors or those who want to travel book hotels where they will spend their time during the vacation</p>
 <h3>API</h3>
 <p>An API is (<i>application programming interface</i>) makes it easier for programmers to design a web page and also enhances communication within different gadets.</br>
